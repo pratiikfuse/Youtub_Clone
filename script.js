@@ -10,7 +10,7 @@ async function fetchData(searchQuery) {
   let result = [];
   let token = "";
   let searchUrl = `https://youtube.googleapis.com/youtube/v3/search?key=${key}&q=${searchQuery}`;
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 5; i++) {
     if (i != 0) {
       searchUrl = `https://youtube.googleapis.com/youtube/v3/search?key=${key}&pageToken=${token}&q=${searchQuery}`;
     } else {
